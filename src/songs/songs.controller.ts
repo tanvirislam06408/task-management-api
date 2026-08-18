@@ -6,8 +6,8 @@ import { CreateSongDTO } from './dto/create-song-dtp';
 export class SongsController {
   constructor(private songsService: SongsService) {}
   @Post()
-  create(@Body() CreateSongDTO: CreateSongDTO) {
-    return this.songsService.create(CreateSongDTO);
+  create(@Body() createSongDto: CreateSongDTO) {
+    return this.songsService.create(createSongDto);
   }
 
   @Get()

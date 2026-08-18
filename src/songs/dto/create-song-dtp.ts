@@ -12,8 +12,7 @@ export class CreateSongDTO {
   readonly title: String;
   @IsNotEmpty()
   @IsArray()
-  @IsString()
-  readonly artist: Array<string>;
+  readonly artist: String[];
   @IsNotEmpty()
   @IsDateString()
   readonly realseDate: Date;
